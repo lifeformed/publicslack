@@ -4,6 +4,7 @@ A signup page for your Slack group that anyone can use, without you needing to s
 
 ## Setup
 You need to find Slack authentication token for sending invites.  Here is how to get it:
+
 1. Sign into your Slack group as an Administrator.
 2. Go to your team invitation page: https://example.slack.com/admin/invites
 3. Open up the developer tools in your browser, and select the Network tab.
