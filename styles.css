@@ -1,0 +1,101 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+.bg {
+	background-color: #BD8181;
+	display: table;
+	width: 100%;
+	height: 100%
+}
+.bg-inner {
+	display: table-cell;
+	vertical-align: middle; 
+}
+.main {
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Lato", sans-serif;
+	color: #fff;
+	font-size: 22pt;
+}
+.main a {
+	color: #fff;
+}
+.main a:hover {
+	color: #a1e0f5;
+}
+.main a:active {
+	color: #ED303C;
+}
+.logo {
+	margin: 20px;
+	margin-top: -120px;
+}
+.info {
+	line-height: 30pt;
+}
+form {
+	margin-top: 30px;
+}
+.email {
+	width: 230px;
+	height: 30px;
+	border: 0;
+	padding: 10px;
+	vertical-align: middle;
+	font-family: "Lato", sans-serif;
+	font-size: 14pt;
+	color: #3B8183;
+}
+.button {
+	height: 50px;
+	padding: 10px 20px;
+	vertical-align: middle;
+	background-color: #ED303C;
+	color: #fff;
+	border: 0;
+	font-family: "Lato", sans-serif;
+	font-size: 14pt;
+}
+.button:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.button:active {
+	padding-bottom: 8px;
+}
+input::-webkit-input-placeholder {
+	color: #9dc0c1;
+	font-family: "Lato", sans-serif;
+	font-size: 14pt;
+}
+input::-moz-placeholder {
+	color: #9dc0c1;
+	font-family: "Lato", sans-serif;
+	font-size: 14pt;
+}
+input:-moz-placeholder {
+	color: #9dc0c1;
+	font-family: "Lato", sans-serif;
+	font-size: 14pt;
+}
+input:-ms-input-placeholder { 
+	color: #9dc0c1;
+	font-family: "Lato", sans-serif;
+	font-size: 14pt;
+}
+.info-bottom {
+	margin-top: 25px;
+	line-height: 20pt;
+	font-size: 10pt;
+	font-style: italic;
+	color: #FFEEFE;
+}
+.questions a {
+	color: #FFEEFE;
+}
+.try-again {
+	margin-top: 10px;
+}
