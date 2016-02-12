@@ -7,15 +7,15 @@ Sitio de registro al Slack de la comunidad GrailsUY @ Meetup. Basado en (https:/
 Instalar [Heroku Toolbelt](https://toolbelt.heroku.com/).
 
 ```sh
-$ git clone git@github.com:heroku/php-getting-started.git # or clone your own fork
-$ cd php-getting-started
+$ git clone https://github.com/nikodc/grailsuy-slack-signup.git # or clone your own fork
+$ cd grailsuy-slack-signup
 $ heroku create
 $ git push heroku master
 $ heroku open
 ```
 
-## Documentation
+## Documentación
 
-For more information about using PHP on Heroku, see these Dev Center articles:
+Sobre información acerca de como usar PHP en Heroku:
 
 - [PHP on Heroku](https://devcenter.heroku.com/categories/php)
