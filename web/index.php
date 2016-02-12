@@ -12,7 +12,7 @@ include('config.php');
 <body>
 	<div class="bg">
 		<div class="bg-inner">
-			<div class="main"><img class="logo" src="logo.png"/>
+			<div class="main"><img class="logo" src="logo.jpg" height="200" width="200"/>
 			<div class="info"><br>GrailsUY - &Uacute;nete a nuestro <a href="http://slack.com" target="_blank">Slack</a>!<br/></div>
 			<form action="register.php" method="POST">
 			<input class="email" type="text" placeholder="Email" name="email"><input class="button" type="submit" name="submit" value="Join">
