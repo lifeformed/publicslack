@@ -17,7 +17,7 @@ include('config.php');
 			<form action="register.php" method="POST">
 			<input class="email" type="text" placeholder="Email" name="email"><input class="button" type="submit" name="submit" value="Join">
 			</form>
-			<div class="info-bottom">S&iacute;genos en <a href="<?php echo $GLOBALS['meetupUrl']; ?>">Meetup</a>.
+			<div class="info-bottom">S&iacute;guenos en <a href="<?php echo $GLOBALS['meetupUrl']; ?>">Meetup</a>.
 				</div>
 			</div>
 		</div>
