@@ -1,6 +1,6 @@
 # grailsuy-slack-signup
 
-Sitio de registro al Slack de la comunidad [GrailsUY @ Meetup](http://www.meetup.com/es-ES/GrailsUY/). Basado en (https://github.com/lifeformed/publicslack) y en  (https://github.com/heroku/php-getting-started).
+Sitio de registro al [Slack](http://grailsuy.slack.com) de la comunidad GrailsUY @ [Meetup](http://www.meetup.com/es-ES/GrailsUY/). Basado en (https://github.com/lifeformed/publicslack) y en  (https://github.com/heroku/php-getting-started).
 
 ## Deployment
 
