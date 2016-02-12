@@ -103,7 +103,7 @@
                                 <div class="main">
                                 <div class="info"><?php echo $message; ?></div>
                                 <?php echo $extraHTML; ?>
-                                <div class="info-bottom">Need help? Contact <a href="mailto:<?php echo $GLOBALS['contactEmail'];?>"><?php echo $GLOBALS['contactName']?></a>.
+                                <div class="info-bottom">S&iacute;genos en <a href="<?php echo $GLOBALS['meetupUrl']; ?>">Meetup</a>.
                                         </div>
                                 </div>
                         </div>
