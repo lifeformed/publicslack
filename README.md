@@ -1,17 +1,21 @@
-# Public Slack
-This is a simple PHP page that you can direct people to sign up for your Slack group, without you needing to personally send out invites.
+# grailsuy-slack-signup
 
-[Here is an example](http://lifeformed.org/publicSlack/) of what the page looks like.
+Sitio de registro al [Slack](http://grailsuy.slack.com) de la comunidad GrailsUY @ [Meetup](http://www.meetup.com/es-ES/GrailsUY/). Basado en (https://github.com/lifeformed/publicslack) y en  (https://github.com/heroku/php-getting-started).
 
-## Setup
-You need to find your Slack authentication token for sending invites.  Here is how to find it:
+## Deployment
 
-1. Sign into your Slack group as an Administrator.
-2. Go to your team invitation page: https://example.slack.com/admin/invites
-3. Open up the developer tools in your browser, and select the Network tab.
-4. Invite a member.  You can enter a fake address.
-5. In the developer tools, find the request that looks like `users.admin.invite?t=1111111111`
-6. Scroll down to the bottom of the request and find the Form Data.  Write down the information in the **channels** and **token** fields.
-7. In the `config.php` file, enter the information you wrote down in step 6.  Set `slackAutoJoinChannels` to the **channels** field, and `slackAuthToken` to the **token** field.
-8. Also put your Slack group name under `slackHostName`.  It should be the same as group name in your Slack URL.
-9. Set the contact information, which will be used in the signup page if people are having troubles.
+Instalar [Heroku Toolbelt](https://toolbelt.heroku.com/).
+
+```sh
+$ git clone https://github.com/nikodc/grailsuy-slack-signup.git # or clone your own fork
+$ cd grailsuy-slack-signup
+$ heroku create
+$ git push heroku master
+$ heroku open
+```
+
+## Documentación
+
+Sobre información acerca de como usar PHP en Heroku:
+
+- [PHP on Heroku](https://devcenter.heroku.com/categories/php)
