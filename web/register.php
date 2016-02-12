@@ -6,25 +6,25 @@
         $success = register($email, $message);
 
         if($success) {
-                $title = "Invitation sent.";
+                $title = "Invitaci&oacute;n enviada.";
                 html_main($title, $message, '');
                 exit();
         }
         else {
-                $title = "Error sending invitation.";
-                $extraHTML = "<div class='try-again'><a href='./'>Try again.</a></div>";
+                $title = "Error enviando invitaci&oacute;n.";
+                $extraHTML = "<div class='try-again'><a href='./'>Intenta nuevamente.</a></div>";
                 html_main($title, $message, $extraHTML);
                 exit();
         }
 
         function register($email, &$message)
         {
-                date_default_timezone_set('America/Los_Angeles');
+                date_default_timezone_set('America/Montevideo');
                 mb_internal_encoding("UTF-8");
 
                 if (!filter_var($email, FILTER_VALIDATE_EMAIL))
                 {
-                        $message = "That doesn't look like a valid email address.";
+                        $message = "No parece una direcci&oacute;n de correo v&aactute;lida.";
                         return false;
                 }
 
@@ -67,22 +67,23 @@
                 if($reply['ok']==false) {
                         switch ($reply['error']) {
                         case 'bad_address':
-                                $message = "That doesn't look like a valid email address.";
+                                $message = "No parece una direcci&oacute;n de correo v&aactute;lida.";
                                 return false;
                         case 'sent_recently':
                         case 'already_invited':
-                                $message = "An invitation has already been sent to that address.";
+                                $message = "Una invitaci&oacute;n ya fue enviada a esa direcci&oacute;n de correo";
                                 return false;
                         case 'already_in_team':
-                                $message = "That address is already registered.";
+                                $message = "La direcci&oacute;n de correo ya se encuentra registrada.";
                                 return false;
                         default:
-                                $message = "An unknown error occured.  Please contact <a href='".$GLOBALS['contactEmail']."' target=\"_blank\">".$GLOBALS['contactName']."</a> and include this error message: \"<em>" . $reply['error'] . "</em>\".";
+                                $url = "<a href='".$GLOBALS['meetupUrl'].">Meetup</a>";
+                                $message = "Error inesperado. Por favor, reporta el problema en nuestro sitio en <a href='".$GLOBALS['meetupUrl'].">Meetup</a>.";
                                 return false;
                         }
                 }
                 else {
-                        $message = "An invitation link has been sent to <em>" . $email ."</em>";
+                        $message = "La invitaci&oacute;n ha sido enviada a: <em>" . $email ."</em>";
                         return true;
                 }
         }
